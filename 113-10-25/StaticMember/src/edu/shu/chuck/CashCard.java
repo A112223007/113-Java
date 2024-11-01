@@ -10,26 +10,25 @@ public class CashCard {
     private static int  cardOrder;
     //方法的身分辨識 = 方法名稱 + 參數個數 + 參數型態(一定要有三個)
 
-
-    public CashCard(String number){ setNumber("unknown");
+    public CashCard(String number) {
+        setNumber("unknown");
+    }
+    public CashCard(String number){
         setNumber(number);
         System.out.printf("第 %d 張卡%n", ++this.cardOrder );
         }
-    }
-
-    public CashCard(String number) {
-        setNumber(number);
-    }
 
     public CashCard(String number, int balance) {
         setNumber(number);
         setBalance(balance);
+        System.out.printf("第 %d 張卡%n", ++this.cardOrder );
     }
 
     public CashCard(String number, int balance, int bonus) {
         setNumber(number);
         setBalance(balance);
         setBonus(bonus);
+        System.out.printf("第 %d 張卡%n", ++this.cardOrder);
     }
 
     public String getNumber() {

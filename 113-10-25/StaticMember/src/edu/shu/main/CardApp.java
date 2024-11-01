@@ -8,7 +8,7 @@ public class CardApp {
                 new CashCard("A001", 50),
                 new CashCard("A002", 300),
                 new CashCard("A003", 1000, 1),
-                new CashCard("A004")
+                //new CashCard("A004")
                 //new CashCard("A004", 2000, 2),
                 //new CashCard("A005", 3000, 3),
         };
