@@ -18,7 +18,7 @@ public class Calculator {
 
         public void performOperations(int a, String operator, int b) {
             Operation operation = new Operation();
-            switch (operation) {
+            switch (operator) {
                 case "+" -> System.out.println(operation.add(a, b));
                 case "-" -> System.out.println(operation.subtract(a, b));
                 case "*" -> System.out.println(operation.multiply(a, b));
