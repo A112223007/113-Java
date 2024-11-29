@@ -6,6 +6,6 @@ public abstract class Fish implements Swimmer {
     public String getName() {
         return name;
     }
-//    @Override
-//    public abstract void swim();
+    @Override
+    public abstract void swim();
 }
