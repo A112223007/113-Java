@@ -5,7 +5,7 @@ public class Average4 {
         var sum = 0.0;
         var count = 0;
         while(true) {
-            var number = nextInt();
+            var number = inputInt();
             if(number == 0) {
                 break;
             }
@@ -17,9 +17,9 @@ public class Average4 {
 
     static Scanner console = new Scanner(System.in);
 
-    static int nextInt() {
-        var input = console.next();
-        while(!input.matches("\\d+")) {
+    static int inputInt() {
+        String input = console.next();
+        while(!input.matches("\\d+")) {        //這裡使用正規表示法來檢查是否為數字
             System.out.println("請輸入數字");
             input = console.next();
         }
