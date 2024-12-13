@@ -11,9 +11,12 @@ public class MutiExpection {
             FileReader reader = new FileReader(file);
             System.out.println(numbers[5]);
         } catch (FileNotFoundException e) {
-            System.out.println("處理受檢意外 :" + e.getMessage());
+            System.out.println("處理受檢意外 :" + e.getMessage());//不寫也可以
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("處理未檢意外 :"+e.getMessage());
         }
+//        catch (Exception e) {
+//            System.out.println("處理未檢意外 :"+e.getMessage());
+//        }
     }
 }
