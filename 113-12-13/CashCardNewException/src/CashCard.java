@@ -89,7 +89,7 @@ public class CashCard {
     }
 
     //扣款
-    public void charge (String number, int money) {
+    public void charge (String number, int money) throws InsufficientException{
         if (this.number.equals(number)) {
             deduction(money);
         }
@@ -125,7 +125,7 @@ public class CashCard {
         }
     }
 
-    public int exchange (int bonus) {
+    public int exchange (int bonus) throws InsufficientException{
         if (bonus > 0 && this.bonus >= bonus) {
             this.bonus -= bonus;
             setBalance(this.balance + bonus * BOUNSCASH);
