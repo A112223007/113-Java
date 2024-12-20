@@ -37,7 +37,7 @@ public class CardApp {
             cards[1].charge("A002", 500);
         }
         catch (NotMarchException e) {
-            System.out.println(e.getCause());
+            System.out.println(e.getMessage());
         }
         catch (InsufficientException e) {
             System.out.println(e.getMessage());
