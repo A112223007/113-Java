@@ -7,7 +7,7 @@ public class TaiwanOrder {
         MenuItem cheese = new MenuItem("起司條", 50, 10);
         MenuItem pig = new MenuItem("豬血糕", 60, 50);
         MenuItem ball = new MenuItem("地瓜球", 40, 50);
-        MenuItem dofu = new MenuItem("臭豆腐", 60, 50);
+        MenuItem tofu = new MenuItem("臭豆腐", 60, 50);
         MenuItem bubbletea = new MenuItem("珍珠奶茶", 60, 20);
         MenuItem oysteromelet = new MenuItem("蚵仔煎", 70, 20);
         MenuItem noddle = new MenuItem("大腸麵線", 60, 20);
@@ -36,7 +36,7 @@ public class TaiwanOrder {
                     System.out.println("2. " + cheese);
                     System.out.println("3. " + pig);
                     System.out.println("4. " + ball);
-                    System.out.println("5. " + dofu);
+                    System.out.println("5. " + tofu);
                     System.out.println("6. " + bubbletea);
                     System.out.println("7. " + oysteromelet);
                     System.out.println("8. " + noddle);
@@ -63,7 +63,7 @@ public class TaiwanOrder {
                                 order.addItem(ball, quantity);
                                 break;
                             case "5":
-                                order.addItem(dofu, quantity);
+                                order.addItem(tofu, quantity);
                                 break;
                             case "6":
                                 order.addItem(bubbletea, quantity);
@@ -103,8 +103,8 @@ public class TaiwanOrder {
                         toRemove = pig;
                     } else if (ball.getName().equals(removeName)) {
                         toRemove = ball;
-                    } else if (dofu.getName().equals(removeName)) {
-                        toRemove = dofu;
+                    } else if (tofu.getName().equals(removeName)) {
+                        toRemove = tofu;
                     } else if (bubbletea.getName().equals(removeName)) {
                         toRemove = bubbletea;
                     } else if (oysteromelet.getName().equals(removeName)) {
@@ -134,7 +134,7 @@ public class TaiwanOrder {
 
                     boolean exists = false;
                     if (chicken.getName().equals(searchName) || cheese.getName().equals(searchName) || pig.getName().equals(searchName) || ball.getName().equals(searchName)
-                            || dofu.getName().equals(searchName) || bubbletea.getName().equals(searchName) || oysteromelet.getName().equals(searchName)
+                            || tofu.getName().equals(searchName) || bubbletea.getName().equals(searchName) || oysteromelet.getName().equals(searchName)
                             || noddle.getName().equals(searchName) || tea.getName().equals(searchName) || jelly.getName().equals(searchName)) {
                         exists = true;
                     }
