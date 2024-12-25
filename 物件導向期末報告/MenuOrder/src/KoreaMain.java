@@ -4,7 +4,7 @@ public class KoreaMain {
             // 創建菜單項目
             MenuItem seafoodcookie = new MenuItem("海鮮煎餅", 100, 50);
             MenuItem pot = new MenuItem("部隊鍋", 200, 15);
-            MenuItem friednoodle = new MenuItem("炸醬面",60, 50);
+            MenuItem friednoodle = new MenuItem("炸醬麵",60, 50);
             MenuItem pigrice = new MenuItem("豬肉拌飯", 100, 50);
             MenuItem bananamilk = new MenuItem("香蕉牛奶", 40, 50);
             MenuItem seaweedrice = new MenuItem("海苔飯捲", 80, 60);
